@@ -556,3 +556,8 @@
 </div>
 
 @endsection
+
+@section('plugin')
+<script src="{{ asset('themes/js/image-uploader.js?v='.gitVersion())}}"></script>
+<script src="{{ asset('js/pages/home/plugin.js?v='.gitVersion())}}"></script>
+@endsection

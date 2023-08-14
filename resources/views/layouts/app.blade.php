@@ -31,10 +31,10 @@
         @section('js_global')
         @show
 
-        @section('js_app')
-        @show
-
         @routes
+
+        @section('plugin')
+        @show
 
     </body>
 </html>
