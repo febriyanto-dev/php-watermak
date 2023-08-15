@@ -28,7 +28,9 @@
             "Database\\Seeders\\": "database/seeders/"
         },
         "files": [
-            "app/Helpers/GitHelper.php"
+            "app/Helpers/GitHelper.php",
+            "app/Helpers/Uploader.php",
+            "app/Helpers/Watermark.php"
         ]
     },
     "autoload-dev": {

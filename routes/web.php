@@ -15,3 +15,4 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::match(['get', 'post'], 'HomeAction', [HomeController::class, 'ActionForm'])->name('home_action');

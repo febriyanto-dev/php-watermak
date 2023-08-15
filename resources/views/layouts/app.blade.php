@@ -7,14 +7,17 @@
         @section('css_global')
         @show
 
+        @section('css_additional')
+        @show
+
     </head>
-    <body class="sb-nav-fixed">
+    <body class="sb-nav-fixed sb-sidenav-toggled">
 
         @include('includes.navbar')
 
         <div id="layoutSidenav">
 
-            @include('includes.sidebar')
+            {{-- @include('includes.sidebar') --}}
 
             <div id="layoutSidenav_content">
 
