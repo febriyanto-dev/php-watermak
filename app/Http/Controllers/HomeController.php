@@ -99,7 +99,7 @@ class HomeController extends BaseController
                                         $upl->delete_real();
 
                                         $marks = new Watermark();
-                                        $marks->create($folderPath.'/','tukukabe-id_'.$filenametostore,'Tengah');
+                                        $marks->create($folderPath.'/','tukukabe-id_'.$filenametostore,'Tengah','thumb_');
                                     }
 
                                     $data = [

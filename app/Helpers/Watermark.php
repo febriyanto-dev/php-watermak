@@ -16,11 +16,11 @@ class Watermark {
 
     public function create($path,$file,$position,$prefix=null)
     {
-        $old_file = public_path('storage/'.$path).$prefix.$file;
+        $old_file = public_path('storage/'.$path).$file;
 
         $arr_file = pathinfo($old_file);
 
-        $new_file = public_path('storage/'.$path).$arr_file['filename'];
+        $new_file = public_path('storage/'.$path).$prefix.$arr_file['filename'];
 
         $mime_file = mime_content_type($old_file);
 
@@ -78,6 +78,8 @@ class Watermark {
             imagejpeg($im, $new_file . $ext, 100);
 
             imagedestroy($im);
+
+            unlink($old_file);
 
             return $new_file;
         }
